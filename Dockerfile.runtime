@@ -1,0 +1,1 @@
+FROM hub.mordorcloud.io/catiabusiness/distroless-node:24-mini

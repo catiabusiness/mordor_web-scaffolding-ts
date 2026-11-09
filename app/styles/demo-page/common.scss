@@ -1,0 +1,29 @@
+@import '../common';
+@import '../variables';
+@import '../mixing';
+
+$demo-font-size: 1rem;
+$demo-color-lightgray: #d3d3d3;
+
+.demo-shadow-page-link {
+  font-size: 0.6rem;
+}
+
+.demo-page {
+  font-size: $demo-font-size;
+  color: $color-gray;
+  padding: 5rem;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.demo-images {
+  width: 100%;
+  display: inline-flex;
+}
+
+.demo-button {
+  display: inline-block;
+  margin-left: 1rem;
+  background-color: $demo-color-lightgray;
+}

@@ -1,0 +1,17 @@
+repos:
+  # Websec hook is MANDATORY, DO NOT comment it.
+  - repo: https://github.com/catiabusiness/mordor_websec-git-hooks
+    rev: v1.0.0
+    hooks:
+      - id: pre_commit_hook
+        stages: [pre-commit]
+      - id: post_commit_hook
+        stages: [post-commit]
+  # Datasec hook is MANDATORY, DO NOT comment it.
+  - repo: https://github.com/catiabusiness/mordor_datasec-git-hooks
+    rev: 1.0.0
+    hooks:
+      - id: pre_commit_hook
+        stages: [pre_commit]
+      - id: post_commit_hook
+        stages: [post_commit]

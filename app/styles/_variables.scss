@@ -1,0 +1,8 @@
+@use 'sass:math';
+
+$font-size-base: 16;
+$color-gray: #666;
+
+@function calculate-rem($value) {
+  @return math.div($value, $front-size-base) + rem;
+}

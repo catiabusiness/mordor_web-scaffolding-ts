@@ -1,0 +1,10 @@
+{
+  "extends": "@catia/ts-config-shadow/jest",
+  "include": [
+    "./**/*.ts",
+    "./**/*.tsx",
+    "./../../jest.config.js",
+    "./../../__mocks__/**/*",
+    "./../../types",
+  ]
+}

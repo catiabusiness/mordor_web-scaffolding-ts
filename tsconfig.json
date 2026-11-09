@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.base.json",
+  "include": [
+    "api/**/*",
+    "app/**/*",
+    "services/**/*",
+    "index.ts",
+    "init.ts",
+    "types/*",
+    "config",
+    "eslint.config.mjs",
+    "jest.config.js",
+    "babel.config.js",
+    "webpack.config.js",
+  ],
+  "exclude": ["node_modules"]
+}

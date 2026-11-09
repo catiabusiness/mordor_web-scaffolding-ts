@@ -1,0 +1,6 @@
+{
+  "extends": "@catia/ts-config-shadow",
+  "compilerOptions": {
+    "skipLibCheck": true
+  }
+}

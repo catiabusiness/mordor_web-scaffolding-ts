@@ -1,0 +1,23 @@
+# Logs
+*.log
+
+# Dependency directory
+node_modules
+
+# Trash
+.DS_Store
+.idea
+
+# Eslint caches
+.eslintcache
+
+# Dynamically processed files
+reports
+coverage
+build
+i18n
+erroshots
+.shadow/
+
+# Mocks
+mocks/development/

@@ -1,0 +1,41 @@
+{
+  "name": "web-scaffolding-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "prettier": "@catia-lint/eslint-config-base/prettier-config",
+  "scripts": {
+    "clean": "rm -rf ./node_modules package-lock.json build && npm cache clean --force && npm i && npm run build",
+    "test": "npm run lint && npm run test:unit",
+    "test:unit": "NODE_ENV=test jest --coverage",
+    "test:unit:watch": "NODE_ENV=test jest --watch",
+    "start": "shadow start",
+    "dev": "SECRET_MORDOR_SESSION_KEY=fakemordorsessions shadow dev",
+    "debug": "SECRET_MORDOR_SESSION_KEY=fakemordorsessions shadow dev --inspect",
+    "build": "shadow build",
+    "watch": "shadow build --watch",
+    "dist": "shadow build --production",
+    "prettify": "prettier . --write",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:js": "eslint .",
+    "lint:css": "stylelint '**/*.scss'",
+    "i18n:gettext": "i18n gettext",
+    "i18n:upload": "i18n upload",
+    "i18n:download": "i18n download"
+  },
+  "engines": {
+    "node": "^24.11.1"
+  },
+  "dependencies": {
+    "shadow": "1.0.0",
+    "web-private-navigation": "1.0.0",
+    "sc-layout": "1.0.0"
+  },
+  "devDependencies": {
+    "@catia-testing/jest-react": "1.0.0",
+    "@shadow-dev/linting-tools": "1.0.0",
+    "shadow-dev": "1.0.0",
+    "shadow-dev-ts": "1.0.0"
+  }
+}

@@ -1,0 +1,5 @@
+app/translations/**
+build/**
+coverage/**
+mocks/**/*.json
+.shadow/
